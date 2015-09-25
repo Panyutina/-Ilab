@@ -3,10 +3,17 @@
 #include <assert.h>
 int Otbor (double D, double a, double b, double c, double x1, double x2)
 {
-    if (D<0)
+	if ((a == 0) && (b == 0) && (c == 0))
+	printf ("%s\n", "R");
+	if (a == 0)
+	{
+		x1 = -c/b;
+		printf ("%lg", x1);
+	}
+	else {
+    if (D < 0)
     printf ("%s\n", "No roots");
-	if
-	 (D>0)
+	if (D > 0)
 	{
 		x1 = (-b-sqrt(D))/(2*a);
 		x2 = (-b+sqrt(D))/(2*a);
@@ -18,6 +25,7 @@ int Otbor (double D, double a, double b, double c, double x1, double x2)
 		x1 = (-b)/(2*a);
 		printf ("%lg", x1);	
 	}
+}
 
 }
 
