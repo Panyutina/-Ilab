@@ -37,7 +37,7 @@ int main ()
     
 do {
 	fflush(stdin);
-}	while(scanf("%lg %lg %lg", &a, &b, &c) == 0);
+}	while(scanf("%lg %lg %lg", &a, &b, &c) != 3);
 
 		
 	D = (b * b - 4 * a * c);
